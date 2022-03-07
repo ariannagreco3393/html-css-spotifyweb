@@ -1,0 +1,48 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --up_bar: rgba(8, 11, 18, 1);
+    --primary: rgba(20, 25, 34, 1);
+    --secondary: rgba(40, 40, 40, 1);
+    --darkgray: rgba(163, 163, 163, 1);
+    --green: rgba(173, 255, 47, 1);
+    --lightgray: rgba(210, 210, 210, 1);
+    --white: rgba(255, 255, 255, 1);
+}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+body {
+    font-family: serif;
+}
+
+main {
+    background-color: var(--primary);
+    height: calc(100vh - 100px);
+}
+
+footer {
+    background-color: var(--secondary);
+    height: 100px;
+}
+
+
+
+/*
+Sidebar
+*/
+
+.sidebar {
+    width: 230px;
+    height: calc(100vh - 100px);
+
+    background-color: var(--black);
+}
+
+
+
+
+
