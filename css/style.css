@@ -34,8 +34,12 @@ footer {
 
 a {
     text-decoration: none;
-    color: var(--darkgray);
 }
+
+img {
+    max-width: 100%;
+}
+
 
 .container {
     width: calc(100vw - 230px);
@@ -43,6 +47,7 @@ a {
     position: absolute;
     top: 100px;
     right: 0;
+    overflow: auto;
 }
 
 
@@ -58,6 +63,21 @@ top_bar
     top: 0;
     right: 0;
 }
+
+.button {
+    position: relative;
+}
+
+.button > a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    padding: 1rem 3rem;
+}
     
 
 
@@ -72,6 +92,11 @@ Sidebar
     position: fixed;
     top: 0;
     bottom: 0;
+}
+
+.logo {
+    width: 180px;
+    padding: 1rem;
 }
 
 
