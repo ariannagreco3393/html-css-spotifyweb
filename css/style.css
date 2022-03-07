@@ -30,7 +30,6 @@ footer {
     position: fixed;
     left: 0px;
     right: 0px;
-    z-index: 999;
 }
 
 a {
@@ -55,7 +54,7 @@ top_bar
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 997;
+
 }
 
 .button {
@@ -87,9 +86,7 @@ Sidebar
     position: fixed;
     top: 0;
     bottom: 0;
-    z-index: 998;
     padding: 1rem;
-
 }
 
 
@@ -139,6 +136,38 @@ Sidebar
 }
 
 
+.profile ul {
+    list-style: none;
+    color: var(--darkgray);
+}
+
+.profile img {
+    width: 14px;
+}
+
+.user img {
+    background-color: var(--darkgray);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.user span {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.profile {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.sidebar_container {
+    position: relative;
+    width: 230px;
+    height: calc(100vh - 100px);
+}
 
 
 
@@ -224,6 +253,23 @@ artist
 
 .artist img {
     border-radius: 50%;
+}
+
+.recently img, 
+.created_for img, 
+.artist img {
+    width: 250px;
+    height: 250px;
+} 
+
+
+/*
+Footer
+*/
+
+.soundbar {
+    display: flex;
+    justify-content: space-between;
 }
 
 
