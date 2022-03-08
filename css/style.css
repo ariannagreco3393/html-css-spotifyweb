@@ -274,6 +274,11 @@ Footer
     align-content: center;
 }
 
+/*
+soundbar left
+*/
+
+
 .soundbar_left img {
     width: 50px;
     
@@ -300,6 +305,77 @@ Footer
     color: var(--darkgray);
     font-size: 14px;
 }
+
+/*
+soundbar center
+*/
+
+.soundbar_center {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+
+.player{
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    gap: 1.5rem;
+    font-size: 25px;
+
+
+}
+
+
+
+.timer_bar {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.line {
+    width: 400px;
+    height: 3px;
+    align-self: center;
+    position: relative;
+}
+
+.under {
+    width: 400px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.459);
+    
+}
+
+.top {
+    width: 25%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--darkgray);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.timer_left, .timer_right {
+    font-size: 10px;
+    color: var(--darkgray);
+   
+}
+
+
+
+
+
 
 
 
