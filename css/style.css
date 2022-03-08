@@ -73,6 +73,10 @@ top_bar
     padding: 0.9rem 3.5rem;
     font-size: 14px;
 }
+
+.button > a:hover {
+    font-size: 16px;
+}
     
 
 
@@ -100,6 +104,10 @@ Sidebar
     line-height: 30px;
 }
 
+.sidebar li:hover {
+    color: var(--white);
+}
+
 .menu {
     margin: 2rem 0;
 }
@@ -108,6 +116,8 @@ Sidebar
     list-style: none;
     color: var(--darkgray);
 }
+
+
 
 .menu img {
     width: 20px;
@@ -205,6 +215,10 @@ container
     
 }
 
+.navbar li:hover {
+    color: var(--white);
+}
+
 .navbar li {
     margin: 0 1rem;
 }
@@ -267,13 +281,32 @@ artist
     border-radius: 50%;
 }
 
-.recently img, 
-.created_for img, 
-.artist img {
-    width: 250px;
-    height: 250px;
-} 
 
+
+.item_container:hover img {
+    opacity: 0.3;
+}
+
+
+.item_container{
+    width: 100%;
+    position: relative;
+
+}
+
+.play_cover {
+    opacity: 0;
+    color: var(--white);
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item_container:hover .play_cover {
+    opacity: 1;
+}
 
 /*
 Footer
@@ -418,6 +451,16 @@ soundbar right
     left: 0;
 }
 
+
+
+
+/*
+Media query 1200px
+*/
+
+@media screen and (min-width: 1200px)  {
+    
+}
 
 
 
