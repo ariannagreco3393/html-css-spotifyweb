@@ -430,7 +430,7 @@ soundbar center
 }
 
 .under {
-    width: 400px;
+    width: 100%;
     height: 3px;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.459);
@@ -564,10 +564,7 @@ Media query 1200px
         width: 160px;
     }
 
-    .recently > h2 {
-        font-size: 18px;
-    }
-
+    
     .cover_text {
         font-size: 12px;
         width: 150px;
@@ -629,25 +626,24 @@ Media query 1024px
     }
 
     .logo {
-        width: 160px;
+        width: 130px;
     }
 
-    .recently > h2 {
-        font-size: 18px;
-    }
+    
 
-    .cover_text {
-        font-size: 12px;
-        width: 150px;
-        height: auto;
-    }
 
     .item {
-        width: 150px;
+        width: 120px;
     }
 
     .item_container img {
         width: 100%;
+    }
+
+    .cover_text {
+        font-size: 12px;
+        width: 120px;
+        height: auto;
     }
 
     .cover_text{
@@ -668,4 +664,206 @@ Media query 1024px
   
 }
 
+
+/*
+Media query 768px
+*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: calc(100% - 200px);
+        height: calc(100vh - 100px);
+        margin-left: 200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: calc(100vh - 100px);
+        background-color: var(--black);
+        
+    }
+
+    .top_bar {
+        width: calc(100vw - 200px);
+        height: 100px;
+       
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .navbar ul {
+    
+        font-size: 10px;      
+    }
+
+    .navbar li {
+        margin: 0 8px;
+    }
+
+    .item {
+        width: 80px;
+    }
+
+    .item_container img {
+        width: 100%;
+    }
+
+    .cover_text {
+        font-size: 12px;
+        width: 80px;
+        height: auto;
+    }
+
+    .cover_text{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .cover_text > h3 {
+        color: var(--white);
+        margin-top: 0.5rem;
+        font-size: 13px;
+    }
+    
+    .cover_text > p {
+        color: var(--darkgray);
+        margin-top: 0.5rem;
+        font-size: 12px;
+    }
+
+    .soundbar_left h6 {
+        font-size: 12px;
+    }
+    
+    .soundbar_left p {
+        font-size: 10px;
+    }
+
+    .soundbar_left i {
+        font-size: 12px;
+    }
+
+    .player i {
+        font-size: 15px;
+    }
+
+    .timer_bar {
+        width: 300px; 
+        gap: 1rem; 
+    }
+
+    .soundbar_right i {
+        font-size: 12px;
+    }
+  
+}
+
+
+/*
+Media query 568px
+*/
+
+@media screen and (max-width: 568px) {
+    .container {
+        width: calc(100% - 150px);
+        height: calc(100vh - 100px);
+        margin-left: 150px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .sidebar {
+        width: 150px;
+        height: calc(100vh - 100px);
+        background-color: var(--black);
+        
+    }
+
+    .top_bar {
+        width: calc(100vw - 150px);
+        height: 100px;
+       
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .navbar ul {
+        font-size: 6px;      
+    }
+
+    .navbar li {
+        margin: 0 8px;
+    }
+
+    .recently, .created_for, .artist {
+        font-size: 12px;
+    }
+
+    .item {
+        width: 50px;
+    }
+
+    .item_container img {
+        width: 100%;
+    }
+
+    .cover_text {
+        font-size: 12px;
+        width: 50px;
+        height: auto;
+    }
+
+    .cover_text{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .cover_text > h3 {
+        color: var(--white);
+        margin-top: 0.5rem;
+        font-size: 10px;
+    }
+    
+    .cover_text > p {
+        color: var(--darkgray);
+        margin-top: 0.5rem;
+        font-size: 9px;
+    }
+
+    .soundbar_left h6 {
+        font-size: 10px;
+    }
+    
+    .soundbar_left p {
+        font-size: 9px;
+    }
+
+    .soundbar_left i {
+        font-size: 12px;
+    }
+
+    .player i {
+        font-size: 15px;
+    }
+
+    .timer_bar {
+        width: 150px; 
+        gap: 1rem; 
+    }
+
+    .soundbar_right i {
+        font-size: 10px;
+    }
+
+    .volume {
+        width: 80px;
+    }
+  
+}
 
