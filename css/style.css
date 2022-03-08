@@ -272,6 +272,7 @@ Footer
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin: 0 1rem;
 }
 
 /*
@@ -365,11 +366,46 @@ soundbar center
 }
 
 
-
 .timer_left, .timer_right {
     font-size: 10px;
-    color: var(--darkgray);
+    color: var(--white);
    
+}
+
+/*
+soundbar right
+*/
+
+.soundbar_right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.soundbar_right i {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.volume {
+    width: 100px;
+    height: 3px;
+    position: relative;
+}
+
+.volume_under {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.459);
+}
+
+.volume_top {
+    width: 25%;
+    height: 100%;
+    background-color: var(--darkgray);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
