@@ -26,7 +26,11 @@ main {
 
 footer {
     background-color: var(--secondary);
-    height: 100px; 
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 a {
@@ -264,14 +268,38 @@ Footer
 */
 
 .soundbar {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 .soundbar_left img {
-    width: 60px;
+    width: 50px;
+    
 }
 
+.soundbar_left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.soundbar_left h6  {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.soundbar_left p {
+    color: var(--darkgray);
+    font-size: 10px;
+}
+
+.soundbar_left i  {
+    color: var(--darkgray);
+    font-size: 14px;
+}
 
 
 
