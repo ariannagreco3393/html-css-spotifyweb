@@ -136,6 +136,12 @@ Sidebar
 
 }
 
+#crea_playlist {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 15px;
+}
+
 
 .profile ul {
     list-style: none;
