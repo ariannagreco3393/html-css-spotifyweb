@@ -347,9 +347,27 @@ soundbar left
     font-size: 10px;
 }
 
+.soundbar_left:hover p {
+    text-decoration: underline;
+}
+
+.icon_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .soundbar_left i  {
     color: var(--darkgray);
     font-size: 14px;
+}
+
+.icon_top:hover {
+    color: var(--white);
+}
+
+.icon_bottom:hover {
+    color: var(--white);
 }
 
 /*
@@ -372,6 +390,11 @@ soundbar center
     color: var(--white);
     gap: 1.5rem;
     font-size: 25px;
+}
+
+.play_icon:hover {
+    font-size: 30px;
+
 }
 
 
@@ -408,12 +431,35 @@ soundbar center
     left: 0;
 }
 
+.top:hover {
+    background-color: var(--green);
+}
+
 
 .timer_left, .timer_right {
     font-size: 10px;
     color: var(--white);
    
 }
+
+.timer_round {
+    opacity: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: absolute;
+    top: -5px;
+    left: 100%;
+}
+
+.top:hover .timer_round {
+    opacity: 1;
+}
+
+
+
+
 
 /*
 soundbar right
@@ -450,6 +496,27 @@ soundbar right
     top: 0;
     left: 0;
 }
+
+.volume:hover .volume_top{
+    background-color: var(--green);
+}
+
+.volume:hover .sound_round{
+    opacity: 1;
+}
+
+.sound_round {
+    opacity: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: absolute;
+    top: -5px;
+    left: 14px;
+}
+
+
 
 
 
