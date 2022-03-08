@@ -99,6 +99,10 @@ Sidebar
     width: 180px;
 }
 
+.logo_mobile {
+    visibility: hidden;
+}
+
 .sidebar li {
     font-size: 12px;
     line-height: 30px;
@@ -565,6 +569,8 @@ Media query 1200px
     }
 
     
+
+    
     .cover_text {
         font-size: 12px;
         width: 150px;
@@ -759,6 +765,7 @@ Media query 768px
     .soundbar_right i {
         font-size: 12px;
     }
+
   
 }
 
@@ -864,6 +871,181 @@ Media query 568px
     .volume {
         width: 80px;
     }
+  
+}
+
+/*
+Media query 320px
+*/
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: calc(100% - 50px);
+        height: calc(100vh - 100px);
+        margin-left: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .sidebar {
+        width: 50px;
+        height: calc(100vh - 70px);
+        background-color: var(--black); 
+    }
+
+    .top_bar {
+        width: calc(100vw - 50px);
+        height: 70px;
+    }
+
+    .button > a {
+        padding: 0.5rem 1rem;
+        font-size: 10px;
+    }
+    
+    .button > a:hover {
+        font-size: 16px;
+    }
+
+    .logo_desktop {
+        display: none;
+    }
+
+
+    .logo_mobile {
+        visibility: visible;
+        width: 20px;
+    }
+
+    .menu span {
+        display: none;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .profile span {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+   
+
+    .navbar ul {
+        margin: 6px;
+        font-size: 10px; 
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .navbar li {
+        margin: 10px 8px;
+    }
+
+    .row {
+        padding: 0.5rem;
+    }
+
+    .cover {
+        flex-wrap: wrap;
+    }
+
+    .recently, .created_for, .artist {
+        font-size: 12px;
+    }
+
+    .item {
+        width: 100px;
+    }
+
+    .item_container img {
+        width: 100%;
+    }
+
+    .cover_text {
+        font-size: 12px;
+        width: 100px;
+        height: auto;
+    }
+
+    .cover_text{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .cover_text > h3 {
+        color: var(--white);
+        margin-top: 0.5rem;
+        font-size: 10px;
+    }
+    
+    .cover_text > p {
+        color: var(--darkgray);
+        margin-top: 0.5rem;
+        font-size: 9px;
+    }
+
+    footer {
+        height: 70px;
+    }
+
+    .soundbar {
+        justify-content: space-between;
+        gap: 2px;
+    }
+
+    .soundbar_left {
+        gap: 0.5rem;
+    }
+
+    .soundbar_left h6 {
+        font-size: 8px;
+    }
+    
+    .soundbar_left p {
+        font-size: 6px;
+    }
+
+    .soundbar_left i {
+        font-size: 8px;
+    }
+
+
+    .player i {
+        font-size: 10px;
+    }
+
+    .player {
+        gap: 10px;
+    }
+
+    .timer_bar {
+        width: 120px; 
+        gap: 0.5rem; 
+    }
+
+    .timer_left, 
+    .timer_right {
+        font-size: 8px;
+    }
+
+    .soundbar_right i {
+        font-size: 8px;
+    }
+
+    .soundbar_right {
+        gap: 0.5rem;
+    }
+
+    .volume {
+        width: 40px;
+    }
+
+    
   
 }
 
