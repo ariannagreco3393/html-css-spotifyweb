@@ -311,8 +311,10 @@ recently
 /*
 created_for
 */
-
-
+.created_for p,
+.artist p {
+    color: var(--darkgray);
+}
 
 /*
 artist
@@ -808,7 +810,7 @@ Media query 320px
 
     .logo_mobile {
         width: 20px;
-        display: flex;
+        display: inline-block;
     }
 
     .menu span {
