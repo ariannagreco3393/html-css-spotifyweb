@@ -651,7 +651,12 @@ Media query 768px
     }
 
     .navbar li {
-        margin: 0 8px;
+        margin: 4px 8px;
+    }
+
+    .button a {
+        font-size: 12px;
+        padding: 0.5rem 2rem;
     }
 
     
@@ -686,95 +691,10 @@ Media query 768px
 
 
 /*
-Media query 568px
+Media query 550px
 */
 
-@media screen and (max-width: 568px) {
-    .container {
-        width: calc(100% - 150px);
-        height: calc(100vh - 100px);
-        margin-left: 150px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .sidebar {
-        width: 150px;
-        height: calc(100vh - 100px);
-        background-color: var(--black);
-        
-    }
-
-    .top_bar {
-        width: calc(100vw - 150px);
-        height: 100px;
-       
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .row {
-        flex-wrap: wrap;
-
-    }
-
-    .cover {
-        width: calc(100% / 2);
-        max-width: 160px;
-    }
-
-    .navbar ul {
-        font-size: 10px;      
-    }
-
-    .navbar li {
-        margin: 5px 8px;
-    }
-
-    .recently, .created_for, .artist {
-        font-size: 12px;
-    }
-
- 
-
-    .soundbar_left h6 {
-        font-size: 10px;
-    }
-    
-    .soundbar_left p {
-        font-size: 9px;
-    }
-
-    .soundbar_left i {
-        font-size: 12px;
-    }
-
-    .player i {
-        font-size: 15px;
-    }
-
-    .timer_bar {
-        width: 150px; 
-        gap: 1rem; 
-    }
-
-    .soundbar_right i {
-        font-size: 10px;
-    }
-
-    .volume {
-        width: 80px;
-    }
-  
-}
-
-/*
-Media query 320px
-*/
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
     .container {
         width: calc(100% - 50px);
         height: calc(100vh - 100px);
@@ -815,6 +735,10 @@ Media query 320px
 
     .menu span {
         display: none;
+    }
+
+    .profile img {
+        width: 20px;
     }
 
     .playlist {
@@ -942,6 +866,10 @@ Media query 320px
 
     .volume {
         width: 40px;
+    }
+
+    .sound_round {
+        left: 10px;
     }
 
     
